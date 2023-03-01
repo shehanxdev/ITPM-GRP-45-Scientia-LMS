@@ -4,6 +4,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 //Boostrap
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+//THEME CONFIGAURATION
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
