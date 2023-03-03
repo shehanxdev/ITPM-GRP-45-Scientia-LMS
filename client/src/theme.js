@@ -4,9 +4,13 @@ export default function themeSetting() {
       mode: "light",
       primary: {
         main: "#17263C",
+        light: "#2e36429e",
       },
       secondary: {
         main: "#FFA500",
+      },
+      grey: {
+        main: "#EEF1F0",
       },
     },
   };
