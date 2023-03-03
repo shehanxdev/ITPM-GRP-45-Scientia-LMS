@@ -13,7 +13,12 @@ export default function LoginPage() {
           alt=""
         />
       </AppBar>
-      <SignInForm />
+      <div
+        style={{ height: "100vh" }}
+        className="row flex-row justify-content-around align-items-center "
+      >
+        <SignInForm className="col-md-6" />
+      </div>
     </div>
   );
 }
