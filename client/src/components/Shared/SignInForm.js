@@ -4,7 +4,7 @@ import { InputField } from "./InputField/InputField";
 function SignInForm() {
   return (
     <Paper
-      className="row flex-column text-center"
+      className="row flex-column text-center custom-signin-form"
       sx={{
         width: "fit-content",
         padding: "50px",

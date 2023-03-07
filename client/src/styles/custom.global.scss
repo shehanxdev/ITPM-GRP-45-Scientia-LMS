@@ -17,3 +17,22 @@ div {
 h1 {
   font-size: calc(16px + 51 * ((100vw - 200px) / 1718)) !important;
 }
+
+//custom CSS
+.custom-signin-form {
+  width: calc(382px + 68 * ((100vw - 1028px) / 890)) !important;
+}
+
+.custom-login-section-wrapper img {
+  width: calc(520px + 480 * ((100vw - 1028px) / 890)) !important;
+  height: calc(610px + 289 * ((100vw - 1028px) / 890)) !important;
+}
+
+@media screen and (max-width: 1120px) {
+  .custom-login-section-wrapper img {
+    display: none;
+  }
+  .custom-login-section-wrapper h1 {
+    font-size: 38px !important;
+  }
+}
