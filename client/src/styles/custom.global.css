@@ -22,6 +22,10 @@ h1 {
   width: calc(382px + 68 * (100vw - 1028px) / 890) !important;
 }
 
+.custom-login-section-wrapper {
+  padding: 20px;
+}
+
 .custom-login-section-wrapper img {
   width: calc(520px + 480 * (100vw - 1028px) / 890) !important;
   height: calc(610px + 289 * (100vw - 1028px) / 890) !important;
