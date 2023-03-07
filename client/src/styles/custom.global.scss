@@ -1,6 +1,6 @@
-html {
-  overflow-x: hidden !important;
-}
+// html {
+//   overflow-x: hidden !important;
+// }
 
 h1,
 h2,
@@ -22,9 +22,6 @@ h1 {
 .custom-signin-form {
   width: calc(382px + 68 * ((100vw - 1028px) / 890)) !important;
 }
-.custom-login-section-wrapper {
-  padding: 20px;
-}
 
 .custom-login-section-wrapper img {
   width: calc(520px + 480 * ((100vw - 1028px) / 890)) !important;
@@ -32,10 +29,10 @@ h1 {
 }
 
 @media screen and (max-width: 1120px) {
-  .custom-login-section-wrapper img {
-    display: none;
+  .custom-login-page .custom-login-img-wrapper {
+    display: none !important;
   }
-  .custom-login-section-wrapper h1 {
+  .custom-login-page .custom-login-section-wrapper h1 {
     font-size: 38px !important;
   }
 }

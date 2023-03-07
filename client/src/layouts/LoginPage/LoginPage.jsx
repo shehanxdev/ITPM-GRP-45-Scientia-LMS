@@ -18,7 +18,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div>
+    <div className="custom-login-page">
       <AppBar position="static" ref={appBarRef}>
         <img
           style={{
@@ -32,19 +32,16 @@ export default function LoginPage() {
         />
       </AppBar>
       <div
-        className="row custom-login-section-wrapper"
+        className="d-flex custom-login-section-wrapper"
         style={customLoginSectionStyle}
       >
-        <div className="d-flex justify-content-center">
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            <h1 className="text-center">
-              Join the digital education revolution
-            </h1>
-            <SignInForm />
-          </div>
-          <div className="row align-items-center">
-            <img src={LOGIN_ILLUSTRATION} alt="" />
-          </div>
+        {" "}
+        <div className="d-flex flex-column justify-content-center align-items-center flex-grow-1">
+          <h1 className="text-center">Join the digital education revolution</h1>
+          <SignInForm />
+        </div>
+        <div className="custom-login-img-wrapper d-flex align-items-center ">
+          <img src={LOGIN_ILLUSTRATION} alt="" />
         </div>
       </div>
     </div>
