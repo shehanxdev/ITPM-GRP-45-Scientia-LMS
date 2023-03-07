@@ -15,5 +15,5 @@ div {
 }
 
 h1 {
-  font-size: 4.3rem !important;
+  font-size: calc(16px + 51 * (100vw - 200px) / 1718) !important;
 }/*# sourceMappingURL=custom.global.css.map */
