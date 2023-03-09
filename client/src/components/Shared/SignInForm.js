@@ -13,7 +13,7 @@ function SignInForm() {
       }}
     >
       <h2 className="heading-1">Sign In</h2>
-      <h5 className="mb-5">Sign in With your email here</h5>
+      <h5 className="mb-5">Sign in with your email here</h5>
       <InputField
         type="email"
         label="E-mail"

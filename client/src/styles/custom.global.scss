@@ -16,11 +16,13 @@ div {
 
 h1 {
   font-size: calc(16px + 51 * ((100vw - 200px) / 1718)) !important;
+  font-weight: 700 !important;
 }
 
 //custom CSS
-.custom-signin-form {
+.custom-login-page .custom-signin-form {
   width: calc(382px + 68 * ((100vw - 1028px) / 890)) !important;
+  box-shadow: 0px 0px 6px 0px rgba(46, 46, 46, 0.432);
 }
 
 .custom-login-section-wrapper img {
