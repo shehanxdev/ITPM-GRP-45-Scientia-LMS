@@ -11,8 +11,32 @@ div {
 }
 
 h1 {
-  font-size: calc(16px + 51 * (100vw - 200px) / 1718) !important;
+  font-size: calc(16px + 35 * (100vw - 200px) / 1718) !important;
   font-weight: 700 !important;
+}
+
+button {
+  background-color: #17263c !important;
+  color: white !important;
+  transition: transform 0.2s ease !important;
+}
+
+button[aria-label=Register] {
+  background-color: white !important;
+  color: #17263c !important;
+  border: 1px solid #17263c;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+.custom-login-page {
+  min-height: 100vh;
+}
+
+.custom-login-section-wrapper {
+  min-height: calc(100vh - 110px);
 }
 
 .custom-login-page .custom-signin-form {
@@ -21,8 +45,8 @@ h1 {
 }
 
 .custom-login-section-wrapper img {
-  width: calc(520px + 480 * (100vw - 1028px) / 890) !important;
-  height: calc(610px + 289 * (100vw - 1028px) / 890) !important;
+  width: calc(520px + 380 * (100vw - 1028px) / 890) !important;
+  height: calc(610px + 189 * (100vw - 1028px) / 890) !important;
 }
 
 @media screen and (max-width: 1120px) {
