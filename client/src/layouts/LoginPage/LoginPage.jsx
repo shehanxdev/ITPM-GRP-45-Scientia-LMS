@@ -11,8 +11,10 @@ import GoogleIcon from "@mui/icons-material/Google";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Divider, Typography } from "@mui/material";
-
+import { useMediaQuery } from "@mui/material";
 export default function LoginPage() {
+  const isTablet = useMediaQuery("(min-width:622px) and (max-width:1120px)");
+  console.log(isTablet);
   return (
     <div className="custom-login-page">
       <AppBar style={{ zIndex: "100", position: "relative" }} position="static">
@@ -33,6 +35,7 @@ export default function LoginPage() {
       >
         {" "}
         <div className="d-flex flex-column justify-content-center align-items-center flex-grow-1 ">
+          {isTablet && <img src={LOGIN_ILLUSTRATION} alt="" />}
           <h1 className="text-center mb-5 mt-5">
             Join The Digital Education <br /> Revolution
           </h1>
