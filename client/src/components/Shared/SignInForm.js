@@ -30,10 +30,15 @@ function SignInForm() {
           <Paper
             className="row flex-column text-center custom-signin-form"
             sx={{
-              width: "fit-content",
-              padding: "50px",
+              width: "100%",
+              maxWidth: "400px",
+              padding: "20px",
               borderRadius: "5px",
               height: "fit-content",
+              margin: "0 auto",
+              "@media (min-width: 600px)": {
+                padding: "50px",
+              },
             }}
           >
             <h5 className="mb-5">Sign in with your email here</h5>
