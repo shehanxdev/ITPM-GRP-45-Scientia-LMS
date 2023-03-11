@@ -6,9 +6,9 @@ import {
   Paper,
 } from "@mui/material";
 import React, { useState } from "react";
-import { InputField } from "./InputField/InputField";
+import { InputField } from "../InputField/InputField";
 
-function SignInForm() {
+function RegisterForm() {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -21,14 +21,14 @@ function SignInForm() {
 
   return (
     <>
-      <Button className="p-2 px-4" onClick={handleOpen}>
-        Sign In
+      <Button aria-label="Register" className="p-2 px-4 " onClick={handleOpen}>
+        Register
       </Button>
       <Dialog open={open} onClose={handleClose}>
-        <DialogTitle>Sign In</DialogTitle>
+        <DialogTitle>Register</DialogTitle>
         <DialogContent>
           <Paper
-            className="row flex-column text-center custom-signin-form"
+            className="row flex-column text-center custom-register-form"
             sx={{
               width: "fit-content",
               padding: "50px",
@@ -36,7 +36,13 @@ function SignInForm() {
               height: "fit-content",
             }}
           >
-            <h5 className="mb-5">Sign in with your email here</h5>
+            <h5 className="mb-5">Create an account</h5>
+            <InputField
+              type="text"
+              label="Full Name"
+              helperText="Required*"
+              variant="outlined"
+            />
             <InputField
               type="email"
               label="E-mail"
@@ -49,6 +55,12 @@ function SignInForm() {
               helperText="Required*"
               variant="outlined"
             />
+            <InputField
+              type="password"
+              label="Confirm Password"
+              helperText="Required*"
+              variant="outlined"
+            />
             <Button
               sx={{
                 backgroundColor: "#0066CC",
@@ -58,7 +70,7 @@ function SignInForm() {
               }}
               variant="contained"
             >
-              Sign In
+              Register
             </Button>
           </Paper>
         </DialogContent>
@@ -67,4 +79,4 @@ function SignInForm() {
   );
 }
 
-export default SignInForm;
+export default RegisterForm;
