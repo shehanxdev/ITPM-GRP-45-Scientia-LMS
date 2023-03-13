@@ -8,3 +8,13 @@
 <li>run npm i </li>
 <li>run npm start</li>
 </ol>
+
+## Server
+<ol>
+<li>Clone the whole repo with git clone command</li>
+<li>Use terminal to navigate to the server folder</li>
+<li>run npm i </li>
+<li>run npm start</li>
+</ol>
+
+
