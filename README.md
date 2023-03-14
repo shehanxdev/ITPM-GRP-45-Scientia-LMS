@@ -10,8 +10,9 @@ The solution is to develop a web-based Learning Management System (LMS) that off
 <li>Administrator</li>
 <li>Student</li>
 <li>Instructor</li>
-<li>Auditor</li>m
+<li>Auditor</li>
 </ul>
+
 # Installation
 ## Client
 <ol>
