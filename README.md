@@ -12,6 +12,8 @@ The solution is to develop a web-based Learning Management System (LMS) that off
 <li>Instructor</li>
 <li>Auditor</li>
 </ul>
+## Technologies
+MERN stack
 
 # Installation
 ## Client
