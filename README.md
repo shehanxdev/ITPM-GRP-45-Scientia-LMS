@@ -12,8 +12,14 @@ The solution is to develop a web-based Learning Management System (LMS) that off
 <li>Instructor</li>
 <li>Auditor</li>
 </ul>
-## Technologies
-MERN stack
+
+## Technologies:
+<ul>
+<li>Client: React js</li>
+<li>Server: Node js/Express</li>
+<li>Database: MongoDB</li>
+</ul>
+
 
 # Installation
 ## Client
