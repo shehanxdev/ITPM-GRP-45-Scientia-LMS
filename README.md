@@ -1,5 +1,7 @@
 # ITPM-GRP-45-Scientia-LMS
 
+#Group ID: GRP_45
+
 # Description
 ## Problem: 
 The current state of online education has shown that there are gaps in the quality of education provided compared to traditional classroom settings. There is a need for a web-based Learning Management System (LMS) that is designed to provide quality education to learners. Many existing LMSs lack the features and functionality necessary to provide a comprehensive learning experience that meets the needs of learners. This has led to a lack of engagement and motivation among learners, resulting in a high dropout rate. Therefore, there is a need to develop a robust LMS that is accessible to all learners, including those with disabilities, and offers a wide range of learning resources, tools, and assessments to enhance their learning experience. The proposed LMS will be designed to bridge the gap between traditional classroom learning and online education and will offer a personalized learning experience for every learner, regardless of their location or learning pace. The goal of this project is to develop an LMS that provides high-quality education and enhances the learning experience foralllearners.
