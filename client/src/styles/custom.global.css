@@ -49,6 +49,15 @@ button:hover {
   height: calc(610px + 189 * (100vw - 1028px) / 890) !important;
 }
 
+.custom-drawer div:first-child {
+  background-color: #17263c !important;
+  color: white !important;
+}
+
+.custom-drawer span {
+  color: white !important;
+}
+
 @media screen and (max-width: 1120px) {
   .custom-login-page .custom-login-img-wrapper {
     display: none !important;

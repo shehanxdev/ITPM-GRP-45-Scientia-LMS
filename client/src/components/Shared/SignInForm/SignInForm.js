@@ -5,11 +5,23 @@ import {
   DialogTitle,
   Paper,
 } from "@mui/material";
+//REACT IMPORTS
 import React, { useState } from "react";
-import { InputField } from "./InputField/InputField";
+import { useNavigate } from "react-router-dom";
+
+import { InputField } from "../InputField/InputField";
 
 function SignInForm() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const handleLogin = () => {
+    alert("hhh");
+    // Perform login logic here
+    // ...
+
+    // Navigate to dashboard on successful login
+    navigate("/dashboard");
+  };
 
   const handleOpen = () => {
     setOpen(true);
@@ -62,6 +74,9 @@ function SignInForm() {
                 marginTop: "13px",
               }}
               variant="contained"
+              onClick={() => {
+                handleLogin();
+              }}
             >
               Sign In
             </Button>

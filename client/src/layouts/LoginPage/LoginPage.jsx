@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { AppBar, Box } from "@mui/material";
-import SignInForm from "../../components/Shared/SignInForm";
+import SignInForm from "../../components/Shared/SignInForm/SignInForm";
 //IMAGES
 import LOGOW from "../../assets/logo/LogoW.png";
 import LOGIN_ILLUSTRATION from "../../assets/illustrations/Illustration.png";
