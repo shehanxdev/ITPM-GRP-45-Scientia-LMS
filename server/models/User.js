@@ -29,14 +29,7 @@ const UserSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    friends: {
-      type: Array,
-      default: [], 
-    },
-    location: String,
-    occupation: String,
-    viewedProfile: Number,
-    impressions: Number,
+    //TODO complete the model
   },
   { timestamps: true }
 );
