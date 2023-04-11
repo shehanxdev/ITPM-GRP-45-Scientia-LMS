@@ -3,7 +3,12 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
+  FormControl,
+  FormControlLabel,
+  FormLabel,
   Paper,
+  Radio,
+  RadioGroup,
 } from "@mui/material";
 import React, { useState } from "react";
 import { InputField } from "../InputField/InputField";
@@ -54,7 +59,31 @@ function RegisterForm() {
               helperText="Required*"
               variant="outlined"
             />
+            <FormControl component="fieldset" required>
+              <FormLabel sx={{ textAlign: "left" }} component="legend">
+                I am
+              </FormLabel>
+              <RadioGroup
+                sx={{ flexDirection: "row" }}
+                aria-label="user-type"
+                name="user-type"
+                //value={userType}
+                //onChange={handleUserTypeChange}
+              >
+                <FormControlLabel
+                  value="student"
+                  control={<Radio />}
+                  label="Student"
+                />
+                <FormControlLabel
+                  value="instructor"
+                  control={<Radio />}
+                  label="Instructor"
+                />
+              </RadioGroup>
+            </FormControl>
             <InputField
+              sx={{ marginTop: "10px" }}
               type="password"
               label="Password"
               helperText="Required*"

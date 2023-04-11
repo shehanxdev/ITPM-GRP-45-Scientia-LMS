@@ -29,7 +29,13 @@ const UserSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    //TODO complete the model
+
+    //TODO complete the model. Add these fields as necessary
+    role: {
+      type: Number,
+      required: true,
+    },
+
   },
   { timestamps: true }
 );
