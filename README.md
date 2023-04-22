@@ -1,5 +1,5 @@
 ```diff
-! Please Open a PR before when commiting
+! Please Open a PR before commiting
 ```
 
 # ITPM-GRP-45-Scientia-LMS 
