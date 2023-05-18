@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema(
   {
@@ -32,13 +32,18 @@ const UserSchema = new mongoose.Schema(
 
     //TODO complete the model. Add these fields as necessary
     role: {
-      type: Number,
+      type: String,
       required: true,
     },
-
+    enrolledCourses: {
+      type: [String],
+    },
+    publishedCourses: {
+      type: [String],
+    },
   },
   { timestamps: true }
 );
 
 const User = mongoose.model("User", UserSchema);
-export default User;
+module.exports = User;
