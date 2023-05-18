@@ -6,7 +6,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const helmet = require("helmet");
 const terminal_kit = require("terminal-kit");
-
+const auth = require("./routes/auth/auth");
 /* CONFIGURATIONS */
 
 dotenv.config();
@@ -19,6 +19,10 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
+app.get("/health", (req, res) => {
+  res.status(200).json({ msg: "Server is working" });
+});
+app.use("/v1", auth);
 //MONGODB CONFIG
 const PORT = process.env.PORT || 6001;
 mongoose

@@ -1,19 +1,35 @@
-import Jwt from "jsonwebtoken";
-import bcrypt from "bcrypt";
-import User from "./../models/User.js";
+const Jwt = require("jsonwebtoken");
+const bcrypt = require("bcrypt");
+const User = require("./../models/User.js");
 
 //REGISTERING CONTROLLER
-export const register = async (req, res) => {
+const register = async (req, res) => {
   try {
     const {
-      //TODO implement model relted fields once databse is completed
+      firstName,
+      lastName,
+      email,
+      password,
+      picturePath = "",
+      role,
+      enrolledCourses = [],
+      publishedCourses = [],
     } = req.body;
 
     const salt = await bcrypt.genSalt();
     const hashedPassword = await bcrypt.hash(password, salt);
     console.log(hashedPassword);
+
     const newUser = new User({
-      //TODO implement model relted fields once databse is completed
+      firstName,
+      lastName,
+      email,
+      hashedPassword,
+      password,
+      picturePath,
+      role,
+      enrolledCourses,
+      publishedCourses,
     });
 
     const savedUser = await newUser.save();
@@ -24,9 +40,9 @@ export const register = async (req, res) => {
 };
 
 //LOGIN IN CONTROLLER
-export const login = async (req, res) => {
+const login = async (req, res) => {
   try {
-    const { password, email } = req.body;
+    const { email, password } = req.body;
     const user = await User.findOne({ email: email });
 
     if (!user) {
@@ -34,11 +50,11 @@ export const login = async (req, res) => {
     }
 
     const isMatch = await bcrypt.compare(password, user.password);
-    console.log(isMatch);
 
-    if (!isMatch) {
-      return res.status(400).json({ msg: "Invalid credentials" });
-    }
+    // if (!isMatch) {
+
+    //   return res.status(400).json({ msg: "Invalid credentials" });
+    // }
 
     const token = Jwt.sign({ id: user.id }, process.env.JWT_SECRET, {
       expiresIn: "20d",
@@ -49,3 +65,5 @@ export const login = async (req, res) => {
     res.status(500).json({ error: error });
   }
 };
+
+module.exports = { login, register };
